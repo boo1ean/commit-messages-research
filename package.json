@@ -1,0 +1,31 @@
+{
+  "name": "commit-messages-research",
+  "version": "0.0.0",
+  "description": "Research semantic of commit messages",
+  "main": "index.js",
+  "dependencies": {
+    "async": "~0.2.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/boo1ean/commit-messages-research.git"
+  },
+  "keywords": [
+    "research",
+    "commits",
+    "commit",
+    "message",
+    "github",
+    "crawler"
+  ],
+  "author": "Egor Gumenyuk <boo1ean0807@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boo1ean/commit-messages-research/issues"
+  },
+  "homepage": "https://github.com/boo1ean/commit-messages-research"
+}
