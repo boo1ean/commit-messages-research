@@ -3,9 +3,6 @@
   "version": "0.0.0",
   "description": "Research semantic of commit messages",
   "main": "index.js",
-  "dependencies": {
-    "async": "~0.2.10"
-  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
