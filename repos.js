@@ -1,3 +1,5 @@
+var github = require('./github-top-100');
+
 var big = [
 	'rails/rails',
 	'laravel/framework',
@@ -14,7 +16,7 @@ var small = [
 ];
 
 var one = [
-	'boo1ean/mgrt'
+	'boo1ean/dotfiles'
 ];
 
-module.exports = one;
+module.exports = github;
