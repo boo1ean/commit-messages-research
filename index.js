@@ -1,18 +1,22 @@
 var repos = require('./repos'),
-    crawler = require('./lib/crawler');
+    crawler = require('./lib/crawler'),
+    predicates = require('./lib/predicates'),
+    scan = require('./lib/scan');
 
 var options = {
 	handler: function(commits, repo) {
-		console.log(commits);
+		var result = scan(commits, predicates);
+		console.log(repo, commits.length);
+		console.log(result);
 	},
 	
 	map: function(entry) {
-		return entry.commit.message;
+		return entry.commit ? entry.commit.message : '';
 	},
 
 	secrets: {
-		client_id: 'xxxxxxxxx',
-		client_secret: 'yyyyyyyyyy'
+		client_id: 'xxxxxx',
+		client_secret: 'yyyyy'
 	}
 };
 
