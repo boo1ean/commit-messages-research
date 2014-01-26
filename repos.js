@@ -13,4 +13,8 @@ var small = [
 	'boo1ean/dotfiles'
 ];
 
-module.exports = small;
+var one = [
+	'boo1ean/mgrt'
+];
+
+module.exports = one;

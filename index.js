@@ -1,6 +1,14 @@
 var repos = require('./repos'),
     crawler = require('./lib/crawler');
 
-crawler(repos, function(data, repo) {
-	console.log(repo, data.length);
-});
+var options = {
+	handler: function(commits, repo) {
+		console.log(repo, commits.length);
+	},
+	
+	map: function(entry) {
+		return entry.commit.message;
+	}
+};
+
+crawler(repos, options);
