@@ -24,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/boo1ean/commit-messages-research/issues"
   },
-  "homepage": "https://github.com/boo1ean/commit-messages-research"
+  "homepage": "https://github.com/boo1ean/commit-messages-research",
+  "dependencies": {
+    "request": "~2.33.0",
+    "parse-link-header": "~0.1.0"
+  }
 }
