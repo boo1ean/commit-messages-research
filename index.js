@@ -1,7 +1,8 @@
 var repos = require('./repos'),
     crawler = require('./lib/crawler'),
     predicates = require('./lib/predicates'),
-    scan = require('./lib/scan');
+    scan = require('./lib/scan'),
+	secrets = require('./secrets');
 
 var options = {
 	handler: function(commits, repo) {
@@ -14,10 +15,7 @@ var options = {
 		return entry.commit ? entry.commit.message : '';
 	},
 
-	secrets: {
-		client_id: 'xxxxxx',
-		client_secret: 'yyyyy'
-	}
+	secrets: secrets
 };
 
 crawler(repos, options);
