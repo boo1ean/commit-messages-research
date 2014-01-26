@@ -27,6 +27,7 @@
   "homepage": "https://github.com/boo1ean/commit-messages-research",
   "dependencies": {
     "request": "~2.33.0",
-    "parse-link-header": "~0.1.0"
+    "parse-link-header": "~0.1.0",
+    "async": "~0.2.10"
   }
 }
